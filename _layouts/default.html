@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trang chủ Blog Cá nhân (Thêm chức năng Header)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.decoration {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+    opacity: 0.1;
+    pointer-events: none
+    }
+.decoration-left {
+    left: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAGTTxl95Ouc_PNPSmy6EcqgojRX_bKDMNLGSYOjGOd7AmK93oE7Rv4uNQbckMfRY6yrHqvjldfBerwpWj4puU7iHkROLWGNup4EM4TJ7xQgZH4xyMU5Ym6FebWU5HZdVyNBy70kah7cHcg_gGC9_07-0_R4xzafVritiJ0K1MqQ7rdDakxyUx3lD4tS-Rh9V5H0_YQiFmdwICQ2BQu3IoDdG5WeBLo4KqeeX8FesqeVRo4LfsehFR9oY6XJe9yYm_WcBWE6Uaxn0E);
+    background-position: left bottom
+    }
+.decoration-right {
+    right: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAGTTxl95Ouc_PNPSmy6EcqgojRX_bKDMNLGSYOjGOd7AmK93oE7Rv4uNQbckMfRY6yrHqvjldfBerwpWj4puU7iHkROLWGNup4EM4TJ7xQgZH4xyMU5Ym6FebWU5HZdVyNBy70kah7cHcg_gGC9_07-0_R4xzafVritiJ0K1MqQ7rdDakxyUx3lD4tS-Rh9V5H0_YQiFmdwICQ2BQu3IoDdG5WeBLo4KqeeX8FesqeVRo4LfsehFR9oY6XJe9yYm_WcBWE6Uaxn0E);
+    background-position: right bottom
+    }
+.dark .decoration {
+    opacity: 0.15;
+    filter: invert(1) hue-rotate(180deg) brightness(1.2)
+    }</style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#388e3c",
+                        "primary-dark": "#a5d6a7",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112116",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-green-50/50 via-white to-green-50/70 dark:from-[#0d1f12] dark:via-[#112116] dark:to-[#0f2418] font-display text-gray-800 dark:text-gray-200">
+<div class="decoration decoration-left"></div>
+<div class="decoration decoration-right"></div>
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<main class="flex-1">
+<div class="flex justify-center">
+<div class="flex flex-col w-full max-w-5xl">
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<a class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden @[480px]:rounded-lg min-h-[450px] cursor-pointer" data-alt="A girl with her back to the camera, sitting at a desk with an open book and a laptop by a large window. Rain is streaking down the windowpane, and outside, a blurry green landscape can be seen. The scene is cozy and focused on studying." href="#" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAE7weAlTpH9p1rBp0xby5ynixhIpRa_xNA3UU2wG5GGxcrA_NhDvW0oROugc1MwGv7nnzKaJ7s8Bkp6ZKubX8i9fqTv2njkM-UoaQ9mvixb2OaiZ4iq--K28nPZCpFO_S3k4rxHk6zyCp3RTNE1PGGmrl5n-hKxqUuAN9uOnJ0hTkr2WPzqmxKDhuGc5VvABR5IufJ0mbrWPJ_9_QJj77EANY09gOMFrJwBJNPYTrFlBk-YWOci7Y_9o1xSLugJTyXxqEN6KBV2ZY");'>
+<div class="p-8 text-white bg-gradient-to-t from-black/60 to-transparent">
+<h1 class="text-5xl font-bold tracking-tight">My Quiet Corner</h1>
+<p class="mt-2 text-lg text-gray-200">Thoughts, stories, and ideas from my world.</p>
+</div>
+</a>
+</div>
+</div>
+<div class="pb-3 px-4 md:px-0 relative z-30">
+<div class="flex border-b border-gray-200/80 dark:border-white/10 bg-green-100/30 dark:bg-[#1a3824]/40 backdrop-blur-sm px-4 gap-8">
+<div class="relative group">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary dark:border-b-primary-dark text-gray-900 dark:text-white pb-[13px] pt-4 cursor-pointer" href="/categories/ky-thuat-tin-hoc/">
+<p class="text-sm font-semibold leading-normal tracking-wide">Kỹ thuật tin học</p>
+</a>
+<div class="absolute left-0 mt-0 w-48 bg-green-100/90 dark:bg-[#276a2a]/95 backdrop-blur-sm rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible z-10">
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38] rounded-t-md" href="/tags/lap-trinh-web/">Lập trình Web</a>
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38]" href="/tags/khoa-hoc-du-lieu/">Khoa học Dữ liệu</a>
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38] rounded-b-md" href="/tags/an-ninh-mang/">An ninh mạng</a>
+</div>
+</div>
+<div class="relative group">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:border-b-primary/50 dark:hover:border-b-primary-dark/50 transition-colors pb-[13px] pt-4 cursor-pointer" href="/categories/ngoai-ngu/">
+<p class="text-sm font-semibold leading-normal tracking-wide">Ngoại ngữ</p>
+</a>
+<div class="absolute left-0 mt-0 w-48 bg-green-100/90 dark:bg-[#276a2a]/95 backdrop-blur-sm rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible z-10">
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38] rounded-t-md" href="/tags/tieng-Anh/">Tiếng Anh</a>
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38]" href="/tags/tieng-Nhat/">Tiếng Nhật</a>
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38] rounded-b-md" href="/tags/tieng-Phap/">Tiếng Pháp</a>
+</div>
+</div>
+<div class="relative group">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:border-b-primary/50 dark:hover:border-b-primary-dark/50 transition-colors pb-[13px] pt-4 cursor-pointer" href="/categories/nghe-thuat/">
+<p class="text-sm font-semibold leading-normal tracking-wide">Nghệ thuật</p>
+</a>
+<div class="absolute left-0 mt-0 w-48 bg-green-100/90 dark:bg-[#276a2a]/95 backdrop-blur-sm rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 invisible group-hover:visible z-10">
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38] rounded-t-md" href="/tags/hoi-hoa/">Hội họa</a>
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38]" href="/tags/am-nhac/">Âm nhạc</a>
+<a class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-100 hover:bg-green-200 dark:hover:bg-[#348a38] rounded-b-md" href="/tags/nhiep-anh/">Nhiếp ảnh</a>
+</div>
+</div>
+</div>
+</div>
+{{content}}
+<footer class="flex flex-col gap-6 px-5 py-10 text-center @container border-t border-gray-200/80 dark:border-white/10 mt-10">
+<div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-dark text-base font-normal leading-normal min-w-40 transition-colors" href="#">Trang chủ</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-dark text-base font-normal leading-normal min-w-40 transition-colors" href="#">Giới thiệu</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-dark text-base font-normal leading-normal min-w-40 transition-colors" href="#">Liên hệ</a>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-dark transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-dark transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-dark transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+</a>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">© 2023 My Quiet Corner. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,34 @@
+title: My Quiet Corner
+description: Thoughts, stories, and ideas from my world.
+author: [Tên của bạn]
+email: [Email của bạn]
+baseurl: "//Gocbinhyen" # Bỏ trống nếu tên repo là username.github.io, hoặc điền /repo-name nếu tên repo khác
+url: "" # Ví dụ: https://yourusername.github.io
+theme: null # Không dùng theme mặc định, chúng ta dùng layout của bạn
+markdown: kramdown
+future: false
+show_excerpts: true
+# --- Bổ sung cấu hình cho Trang Danh mục ---
+
+# Cấu hình Layout mặc định cho Bài viết
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Kích hoạt các plugins cần thiết
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+
+# Cấu hình Jekyll Archives để tạo trang danh mục
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archive
+  permalinks:
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
